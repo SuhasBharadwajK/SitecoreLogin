@@ -3,9 +3,43 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{5E3F9324-FE7F-4A08-8AC0-DC6F2494F421}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{50AF2714-1032-4B20-B30B-F927EEC80A67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{9585FA96-55A6-4392-9CA3-A6116C7D38AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Website", "Website", "{BC30715F-8C4D-470B-A259-CD54D841ABC3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Login", "Login", "{A37CB00D-C640-4D44-BC15-B0B14980896E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SitecoreLogin.Project.Website", "src\Project\Website\code\SitecoreLogin.Project.Website.csproj", "{3FBBC51A-2F10-472C-83B6-BADB479F37D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SitecoreLogin.Feature.Login", "src\Feature\Login\code\SitecoreLogin.Feature.Login.csproj", "{35D3C9F1-1C18-4255-B15D-63EDDC9301A8}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3FBBC51A-2F10-472C-83B6-BADB479F37D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FBBC51A-2F10-472C-83B6-BADB479F37D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FBBC51A-2F10-472C-83B6-BADB479F37D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FBBC51A-2F10-472C-83B6-BADB479F37D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35D3C9F1-1C18-4255-B15D-63EDDC9301A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35D3C9F1-1C18-4255-B15D-63EDDC9301A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35D3C9F1-1C18-4255-B15D-63EDDC9301A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35D3C9F1-1C18-4255-B15D-63EDDC9301A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BC30715F-8C4D-470B-A259-CD54D841ABC3} = {9585FA96-55A6-4392-9CA3-A6116C7D38AD}
+		{A37CB00D-C640-4D44-BC15-B0B14980896E} = {5E3F9324-FE7F-4A08-8AC0-DC6F2494F421}
+		{3FBBC51A-2F10-472C-83B6-BADB479F37D2} = {BC30715F-8C4D-470B-A259-CD54D841ABC3}
+		{35D3C9F1-1C18-4255-B15D-63EDDC9301A8} = {A37CB00D-C640-4D44-BC15-B0B14980896E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {60146352-91ED-4098-B933-F3530EC0A7C6}

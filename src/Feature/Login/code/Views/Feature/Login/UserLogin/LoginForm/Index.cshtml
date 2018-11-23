@@ -1,0 +1,6 @@
+﻿@model SitecoreLogin.Feature.Login.Models.LoginViewModel
+
+@using (Html.BeginForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName))
+{
+    @Html.Sitecore().FormHandler("Login", "LoginUser")
+}
